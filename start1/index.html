@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="IT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mia calcolatrice</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <h1 id="titolo">La mia calcolatrice in JS</h1>
+
+        <input type="text" name="display" id="digit" readonly="readonly" class="display">
+        <div id="container">
+            <button type="button" onclick="getClickId(7)" value="7" class='button number' id="sette">7</button>
+            <button type="button" onclick="getClickId(8)" value="8" class='button number' id="otto">8</button>
+            <button type="button" onclick="getClickId(9)" value="9" class='button number' id="nove">9</button>
+            <button type="button" onclick="getClickId('/')" value="/" class='button number operatore'
+                id="diviso">/</button>
+            <button type="button" onclick="getClickId(4)" value="4" class='button number' id="quattro">4</button>
+            <button type="button" onclick="getClickId(5)" value="5" class='button number' id="cinque">5</button>
+            <button type="button" onclick="getClickId(6)" value="6" class='button number' id="sei">6</button>
+            <button type="button" onclick="getClickId('*')" value="X" class='button number operatore'
+                id="moltiplicazione">X</button>
+            <button type="button" onclick="getClickId(1)" value="1" class='button number' id="uno">1</button>
+            <button type="button" onclick="getClickId(2)" value="2" class='button number' id="due">2</button>
+            <button type="button" onclick="getClickId(3)" value="3" class='button number' id="tre">3</button>
+            <button type="button" onclick="getClickId('-')" value="-" class='button number operatore'
+                id="sottrazione">-</button>
+                <button type="button" onclick="operazione()" value="=" class='button number operatore'
+                id="uguale">=</button>
+
+            <button type="button" onclick="getClickId('0')" value="0" class='button number' id="zed">0</button>
+            <button type="button" onclick="getClickId('.')" value="." class='button number decimale'
+                id="punto">.</button>
+            <button type="button" onclick="getClickId('+')" value="+" class='button number operatore'
+                id="addizione">+</button>
+                <button type="button" onclick="cancella('C')" value="C" class='button number funzione'
+                id="cancella">C</button>
+
+    </div>
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
